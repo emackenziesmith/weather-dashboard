@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 40px;
+    color:white;
+    background-image: linear-gradient(to right, rgba(63, 133, 235, .8), rgba(0, 0, 81, 1));
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-container {
+    border: 1px solid;
+}
