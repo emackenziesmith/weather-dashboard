@@ -4,41 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
   <link rel="stylesheet" href="./assets/style.css" />
   <title>Weather Dashboard</title>
 </head>
 
-<body class="flex-column min-100-vh">
-  <header class="hero">
+<body>
+  <header>
     <h1 class="app-title">Weather Dashboard</h1>
   </header>
 
-  <main class="flex-row justify-space-between">
-    <div class="col-12 col-md-4">
-
-  <div class="card">
-    <h3 class="card-header">Search for a City:</h3>
-    <form id="search-form" class="card-body">
-      <label class="form-label" for="search">City</label>
-      <input name="city" id="city" type="text" autofocus="true" class="form-input" />
-      <button type="submit" class="btn">Search</button>
-    </form>
+  <div class="pure-g">
+    <aside class="pure-u-1 pure-u-lg-6-24">
+      <section>
+        <form class="pure-form pure-form-stacked center" action="">
+          <label class="aside-element" id="city"><h2>Search for a City: </h2></label>
+          <input class="aside-element" type="search" id="city" name="city" placebolder="">
+          <button id="search-button" class="aside-element pure-button bure-button-primary" type="button">Search</button>
+        </form>
+      </section>
+      <section id="city-list" class="center"></section>
+    </aside>
+    
+    <main class="pure-u-1 pure-u-lg-18-24">
+      <div id="current-weather-box"></div>
+      <div id="future-weather-box" class="hidden">
+        <h2>5-Day Forecast</h2>
+        <div class="pure-g" id="card-list">
+        </div>
+      </div>
+    </main>
+    <script src="./assets/java.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/dayjs.min.js"></script>
   </div>
-
-  <div class="col-12 col-md-8">
-    <div id="weather-container" class="list-group"></div>
-  </div>
-
-  <div class="col-12 col-md-8">
-    <h2 class="subtitle">5-Day Forecast: <span id="five-day-forecast"></span></h2>
-    <div id="days-container" class="list-group"></div>
-  </div>
-
-  
-
 </body>
-
 </html>
-
-xyxyxyxy

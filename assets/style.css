@@ -4,7 +4,7 @@ body {
 
 header h1 {
     font-weight: bold;
-    margin: 0;
+    margin: 10px;
     font-size: 40px;
     color:white;
     background-image: linear-gradient(to right, rgba(63, 133, 235, .8), rgba(0, 0, 81, 1));
@@ -14,7 +14,31 @@ header h1 {
     align-items: center;
 }
 
-.weather-container {
-    border: 1px solid;
+.aside-element {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    margin: 0px;
 }
 
+.pure-form {
+    margin: 10px;
+}
+
+main h2 {
+    display: inline-block;
+}
+
+.current-weather-box-style {
+    border: 2px black solid ;
+    padding: 2%;
+    margin: 2%;
+}
+
+.current-weather-box-style p {
+    margin-top: 5px;
+}
+
+.hidden {
+    visibility: hidden;
+}
