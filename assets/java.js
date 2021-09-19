@@ -4,7 +4,7 @@ let currentWeatherEl = document.querySelector('#current-weather-box')
 let futureWeatherEl = document.querySelector('#future-weather-box')
 let cardListEl = document.querySelector('#card-list')
 
-let today = dayjs().format('MMM-D-YYYY')
+let today = dayjs().format("MM-DD-YYYY")
 
 
 let api = "8c22c406b718725a877dfb5188d295ba"
