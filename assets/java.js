@@ -39,14 +39,14 @@ function useFetch(geoCoordinates) {
 function handleSearchButton() {
 
     city = searchButtonEl.previousElementSibling.value
-    coordinates = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api}`
+    coordinates = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api}`
     useFetch(coordinates)  
 }
 
 function handleStoredButton(e) {
 
     city = e.target.innerText
-    coordinates = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api}`
+    coordinates = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api}`
     useFetch(coordinates) 
 }
 
@@ -91,7 +91,7 @@ function showCurrentWeather(data) {
 
     let currentWeather = 
     `<div class="current-weather-box-style">
-    <h2>${cityName} (${today}) <img src="http://openweathermap.org/img/wn/${symbol}.png"/></h2>
+    <h2>${cityName} (${today}) <img src="https://openweathermap.org/img/wn/${symbol}.png"/></h2>
     <p>Temp:  ${temp}°F</p>
     <p>Wind:  ${wind} MPH</p>
     <p>Humidity:  ${hum}%</p>
@@ -120,7 +120,7 @@ function showFutureWeather(data) {
       let card = 
       `<div class="pure-u-lg-1-5">
       <h3>${day}</h3>
-      <img src="http://openweathermap.org/img/wn/${symbol}.png"/>
+      <img src="https://openweathermap.org/img/wn/${symbol}.png"/>
       <p>Temp:  ${temp}°F</p>
       <p>Wind:  ${wind} MPH</p>
       <p>Humidity:  ${hum}%</p>
