@@ -6,7 +6,6 @@ let cardListEl = document.querySelector('#card-list')
 
 let today = dayjs().format("MM-DD-YYYY")
 
-
 let api = "8c22c406b718725a877dfb5188d295ba"
 let city = ''
 let coordinates = ''
@@ -23,7 +22,6 @@ function useFetch(geoCoordinates) {
       return resp.json();
     })
     .then((data) => {
-      // console.log(data)
       createStoredButton(data)
       lat = data[0].lat
       lon = data[0].lon
@@ -32,7 +30,6 @@ function useFetch(geoCoordinates) {
           return res.json()
       })
       .then((data) => {
-          // console.log(data)
         showCurrentWeather(data)
       })
     })
