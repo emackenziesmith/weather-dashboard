@@ -106,15 +106,13 @@ function showFutureWeather(data) {
     futureWeatherEl.classList.remove("hidden")
     let cards = ''
 
-    for (let i=0; i<5; i++) {
+    for (let i = 0; i < 5; i++) {
 
       let day = dayjs().add(i + 1, 'day').format('MMM-D-YYYY')
       let symbol = data.daily[i].weather[0].icon
       let temp = data.daily[i].temp.day
       let wind = data.daily[i].wind_speed
       let hum = data.daily[i].humidity
-
-      // sty;e cards
  
       
       let card = 
@@ -128,9 +126,8 @@ function showFutureWeather(data) {
       `
       cards = cards + card
 
-
     }
-    
+
     cardListEl.innerHTML = cards
 }
 
